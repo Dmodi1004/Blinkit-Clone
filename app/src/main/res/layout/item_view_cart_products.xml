@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13.00dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/productImageIv"
+                android:layout_width="39.00dp"
+                android:layout_height="39.00dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/cart_bg"
+                android:padding="3.90dp"
+                android:src="@drawable/milma_milk" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5.20dp"
+                android:layout_weight="2.4"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/productTitleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Nandini milmamilk"
+                    android:textColor="@color/black"
+                    android:textSize="13.00sp" />
+
+                <TextView
+                    android:id="@+id/productQuantityTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="40g"
+                    android:textColor="@color/black"
+                    android:textSize="13.00sp" />
+
+                <TextView
+                    android:id="@+id/productPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:text="₹50"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="13.00sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/productCountLl"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="30dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/product_count_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/productCountTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19.50sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
